@@ -1,0 +1,226 @@
+body {
+    background-color: skyblue;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#h1 {
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+#heading {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+
+}
+
+#add-task-text {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+#button-grp {
+    float: right;
+    clear: both;
+}
+
+/* add task button  */
+#plus-button {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: black;
+    border: 4px solid rgb(60, 185, 247);
+}
+
+#addtask-txt {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#back-btn {
+    display: none;
+    background-image: url(./backbtn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    border: 4px solid rgb(60, 185, 247);
+}
+
+#add-new-list-border {
+    border: 4px solid rgb(13, 158, 242);
+    background-color: skyblue;
+    height: 120px;
+    width: 300px;
+    border-radius: 10px;
+    position: absolute;
+    top: 25%;
+    left: 450px;
+    padding: 25px;
+    display: none;
+    z-index: 1;
+}
+
+#add-new-item-border {
+    border: 4px solid rgb(13, 158, 242);
+    background-color: skyblue;
+    height: 120px;
+    width: 300px;
+    border-radius: 10px;
+    position: absolute;
+    top: 25%;
+    left: 450px;
+    padding: 25px;
+    display: none;
+    z-index: 1;
+}
+
+#add-new-list-heading,
+#add-new-item-heading {
+    color: black;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+#input-of-add-list,
+#input-of-add-item {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 62px;
+}
+
+#add-new-list-buttons,
+#add-new-item-buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.task-btn {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    border: 4px solid rgb(60, 185, 247);
+    border-radius: 50%;
+
+}
+
+hr {
+    background-color: white;
+    height: 2px;
+}
+
+/* container for storing card's title */
+#card-title {
+    color: blue;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+/* container for storing cards */
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-left: 2%;
+    color: blue;
+}
+
+.card {
+    margin: 20px;
+    position: relative;
+    top: 30px;
+    background-color: white;
+    border-radius: 20px;
+    width: 240px;
+    height: 245px;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.item-content-buttons {
+    display: flex;
+    position: absolute;
+    top: 220px;
+    justify-content: space-between;
+}
+
+.delete-item-content {
+    background-image: url(./delete22.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    border: none;
+    border-radius: 10%;
+    position: relative;
+    left: 90px;
+}
+
+.add-item-content {
+    background-image: url(./add32.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    border-radius: 10%;
+    position: relative;
+    left: 108px;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: red;
+    list-style-type: none;
+}
+
+#page2-card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#page2-back {
+    position: absolute;
+    top: 25px;
+}
+
+.AddItemonpage2 {
+    position: absolute;
+    top: 25px;
+    left: 90%;
+}
+
+.item-btn {
+    border: 4px solid rgb(13, 158, 242);
+}
