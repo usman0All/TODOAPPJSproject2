@@ -10,7 +10,6 @@ function addCardPop1() {
 function closeAddCardPopup() {
   const popup1 = document.getElementById("add-new-list-border");
   popup1.style.display = "none";
-
 }
 //handling card popup1
 function handleAddCard() {
@@ -91,7 +90,7 @@ function removeAddContentToCardPopup() {
 }
 
 
-//adding  data into li
+//adding  data into li//popup2
 function addContentToCard() {
   const contentListId = `content_list_${cardId}`;
   const Ul = document.getElementById(contentListId);
@@ -111,7 +110,7 @@ function addContentToCard() {
     }
     Ul.appendChild(liNode);
     removeAddContentToCardPopup()
-
+//line-through functinality
     liNode.addEventListener("click", function () {
       if (liNode.style.textDecoration === "line-through") {
         liNode.style.textDecoration = "none";
@@ -139,7 +138,6 @@ function doneTask(listId, cardId) {
   const contentId = `content_${listId}`;
   const liElement = document.getElementById(contentId);
   liElement.classList.toggle("checked")
-
   for (let i = 0; i < data.length; i++) {
     for (let j = 0; j < data[i].content.length; j++) {
       const content = data[i].content[j]

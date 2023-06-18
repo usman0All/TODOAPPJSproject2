@@ -5,31 +5,27 @@ a {
     text-decoration: none;
     color: black;
 }
-
 #h1 {
     margin-top: 20px;
     margin-left: 15px;
-
 }
-
 #heading {
     font-size: 26px;
     color: white;
     font-weight: bold;
-
 }
-
 #add-task-text {
     font-size: 25px;
     color: white;
-    font-weight: bold;
+    font-weight:bold;
 }
 
 #button-grp {
     float: right;
     clear: both;
-}
-
+    width: 200px;
+    height:50px;
+} 
 /* add task button  */
 #plus-button {
     position: relative;
@@ -41,9 +37,14 @@ a {
     text-align: center;
     font-size: xx-large;
     font-weight: bolder;
-    color: black;
-    border: 4px solid rgb(60, 185, 247);
+    color:rgb(25, 167, 239); 
+    border: 4px solid rgb(60, 185, 247); 
+    cursor:pointer;
 }
+#plus-button:hover{
+    border:2px solid rgb(13, 158, 242);
+}
+
 
 #addtask-txt {
     height: 100px;
@@ -67,9 +68,13 @@ a {
     left: 10px;
     top: 15px;
     border: 4px solid rgb(60, 185, 247);
+    cursor:pointer;
+}
+#back-btn:hover{
+    border:2px solid rgb(13, 158, 242);
 }
 
-#add-new-list-border {
+#add-new-list-border{
     border: 4px solid rgb(13, 158, 242);
     background-color: skyblue;
     height: 120px;
@@ -99,10 +104,10 @@ a {
 
 #add-new-list-heading,
 #add-new-item-heading {
-    color: black;
+    color: white;
     text-align: center;
-    font-size: large;
-    font-weight: bold;
+    font-size:larger;
+    font-weight:bolder;
 }
 
 #input-of-add-list,
@@ -110,13 +115,14 @@ a {
     text-align: center;
     margin-top: 20px;
     margin-left: 62px;
+    border: 1px solid  rgb(13, 158, 242);;
 }
 
 #add-new-list-buttons,
 #add-new-item-buttons {
     display: flex;
     justify-content: space-between;
-
+    cursor: pointer;
 }
 
 .task-btn {
@@ -125,10 +131,14 @@ a {
     text-align: center;
     font-size: large;
     font-weight: bolder;
-    color: black;
+    color: blue;
     border: 4px solid rgb(60, 185, 247);
     border-radius: 50%;
+    cursor: pointer;
 
+}
+.task-btn:hover{
+    border:1px solid rgb(13, 158, 242);;
 }
 
 hr {
@@ -141,6 +151,8 @@ hr {
     color: blue;
     text-align: center;
     position: relative;
+    font-weight: bold;
+    font-style: italic;
     top: 50px;
 }
 
@@ -170,8 +182,8 @@ hr {
     position: absolute;
     top: 220px;
     justify-content: space-between;
+    cursor: pointer;
 }
-
 .delete-item-content {
     background-image: url(./delete22.png);
     background-repeat: no-repeat;
@@ -184,8 +196,8 @@ hr {
     border-radius: 10%;
     position: relative;
     left: 90px;
+    cursor: pointer;
 }
-
 .add-item-content {
     background-image: url(./add32.png);
     background-repeat: no-repeat;
@@ -197,30 +209,42 @@ hr {
     border-radius: 10%;
     position: relative;
     left: 108px;
+    cursor: pointer;
 }
-
 .checked {
     text-decoration: line-through;
     color: red;
     list-style-type: none;
 }
-
 #page2-card-container {
     display: flex;
     flex-wrap: wrap;
 }
-
 #page2-back {
     position: absolute;
     top: 25px;
 }
-
 .AddItemonpage2 {
     position: absolute;
     top: 25px;
     left: 90%;
 }
-
 .item-btn {
     border: 4px solid rgb(13, 158, 242);
+    cursor:pointer;
+    color:rgb(60, 111, 252); 
+    font-weight: bold;
+    font-size: larger;
+}
+.item-btn:hover{
+    border:1px solid rgb(13, 135, 242);; 
+}
+.input{
+    height:30px;
+    width:180px;
+    border-radius:10px;
+
+}
+.input:hover{
+    border:3px solid rgb(13, 135, 242);
 }
