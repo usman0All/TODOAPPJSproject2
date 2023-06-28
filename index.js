@@ -6,6 +6,9 @@ function addCardPop1() {
   // let sub=document.getElementById('main-container');
   // sub.style.opacity='17%'
 }
+
+
+
 // close Add card popup
 function closeAddCardPopup() {
   const popup1 = document.getElementById("add-new-list-border");
