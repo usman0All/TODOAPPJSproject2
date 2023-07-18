@@ -1,18 +1,27 @@
 let data = [];
 let cardId;
+let isBlur=false;
 function addCardPop1() {
   const popup1 = document.getElementById("add-new-list-border");
   popup1.style.display = "block";
-  // let sub=document.getElementById('main-container');
-  // sub.style.opacity='17%'
+  //blur
+  const cardContainer = document.getElementById("card-container");
+  if (!isBlur) {
+    cardContainer.classList.add("blur");
+    isBlur = true;
+
+  }
 }
-
-
 
 // close Add card popup
 function closeAddCardPopup() {
   const popup1 = document.getElementById("add-new-list-border");
   popup1.style.display = "none";
+
+  ///
+  const cardContainer = document.getElementById("card-container");
+    cardContainer.classList.remove("blur"); // Remove the blur effect
+    isBlur = false; // Update the blur state
 }
 //handling card popup1
 function handleAddCard() {
@@ -34,6 +43,9 @@ function handleAddCard() {
 
   const backButton = document.querySelector('#back-btn')
   backButton.style.display = 'none'
+  const cardContainer = document.getElementById("card-container");
+    cardContainer.classList.remove("blur"); // Remove the blur effect
+    isBlur = false; // Update the blur state
 
 }
 
